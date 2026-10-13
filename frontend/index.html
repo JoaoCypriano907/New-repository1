@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nós Por Nós Basketball</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- =====================================================
+     TELA INICIAL
+     NÃO ALTERAMOS A FUNÇÃO DA logo.png.jpeg
+     ===================================================== -->
+
+<section id="telaLogin">
+
+    <div class="conteudo-inicial">
+
+        <p class="mensagem">
+            BEM-VINDO AO NOSSO TIME
+        </p>
+
+        <button
+                type="button"
+                class="btn-entrar"
+                onclick="entrarNoSite()"
+        >
+
+            <span>ENTRAR</span>
+
+            <span class="seta">→</span>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SITE PRINCIPAL
+     ===================================================== -->
+
+<section id="site" class="escondido">
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="cabecalho">
+
+        <div class="logo-header">
+
+            <img
+                    src="./imagens/WhatsApp Image 2026-10-11 at 22.55.44 (1).jpeg"
+                    alt="Nós Por Nós Basketball"
+            >
+
+        </div>
+
+
+        <nav class="menu">
+
+
+        </nav>
+
+
+        <button
+                class="btn-sair"
+                onclick="sair()"
+        >
+
+            Sair →
+
+        </button>
+
+    </header>
+
+
+    <!-- ================= CONTEÚDO DO SITE ================= -->
+
+    <main id="pagina-principal">
+
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-conteudo">
+
+
+                <img
+                        class="logo-hero"
+                        src="./imagens/WhatsApp Image 2026-10-11 at 22.55.43.jpeg"
+                        alt="Nós Por Nós Basketball"
+                >
+
+
+                <h1>
+                    NÓS POR NÓS
+                </h1>
+
+
+                <h2>
+                    BASKETBALL
+                </h2>
+
+
+                <p>
+                    Mais que um time,<br>
+                    somos uma família.
+                </p>
+
+
+                </button>
+
+            </div>
+
+
+            <!-- FRASE DO LADO DIREITO -->
+
+            <div class="frase-hero">
+
+                <span>DISCIPLINA</span>
+                <span>RESPEITO</span>
+                <span>UNIÃO</span>
+                <span>EVOLUÇÃO</span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= SOBRE NÓS ================= -->
+
+        <section class="sobre">
+
+            <div class="sobre-texto">
+
+                <span class="titulo-pequeno">
+                    IDENTIDADE
+                </span>
+
+
+                <h2>
+                    NÓS POR NÓS
+                </h2>
+
+
+                <p>
+                    O Nós Por Nós Basketball nasceu da vontade
+                    de jogar, evoluir e conquistar juntos.
+                    Aqui, cada um importa.
+                </p>
+
+
+                <p>
+                    A quadra é o nosso espaço, o respeito é
+                    a nossa base e a união é a nossa força.
+                </p>
+
+                Localização- Vila Cruzeiro (Penha)
+
+                <div class="valores">
+
+                    <div>
+                        <strong>♧</strong>
+                        <span>UNIÃO</span>
+                        <small>juntos na vida</small>
+                    </div>
+
+
+                    <div>
+                        <strong>🏆</strong>
+                        <span>DISCIPLINA</span>
+                        <small>cada dia</small>
+                    </div>
+
+
+                    <div>
+                        <strong>🏀</strong>
+                        <span>EVOLUÇÃO</span>
+                        <small>constante</small>
+                    </div>
+
+
+                    <div>
+                        <strong>♕</strong>
+                        <span>RESPEITO</span>
+                        <small>sempre</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="sobre-imagem">
+
+                <img
+                        src="./imagens/npn-time.png"
+                        alt="Nós Por Nós Basketball"
+                >
+
+                <div class="frase-imagem">
+
+                    JUNTOS<br>
+                    SOMOS<br>
+                    <strong>MAIS FORTES</strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- FOTO DO TIME -->
+        <section class="secao-foto-time">
+            <img
+                    src="./imagens/WhatsApp Image 2026-10-12 at 15.36.41.jpeg"
+                    alt="Nós Por Nós Basketball - Nosso time"
+            >
+        </section>
+
+        <section class="secao-foto-time">
+    <img
+            src="./imagens/WhatsApp Image 2026-10-11 at 22.55.44 (1).jpeg"
+            alt="Nós Por Nós Basketball - Nosso time"
+    >
+</section>
+
+        <!-- ================= JOGOS ================= -->
+
+
+
+    </main>
+
+
+
+    <!-- ================= CONTEÚDO DAS PÁGINAS ================= -->
+
+    <section id="conteudo" class="conteudo-pagina"></section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+
+            <img
+                    src="./imagens/WhatsApp Image 2026-10-11 at 22.55.44 (1).jpeg"
+                    alt="Nós Por Nós"
+            >
+
+        </div>
+
+
+        <div class="footer-menu">
+
+            <button onclick="voltarInicio()">
+                Início
+            </button>
+
+            <button onclick="mostrarPagina('clube')">
+                Time
+            </button>
+
+            <button onclick="mostrarPagina('jogos')">
+                Jogos
+            </button>
+
+            <button onclick="mostrarPagina('galeria')">
+                Galeria
+            </button>
+
+            <button onclick="mostrarPagina('perfil')">
+                Contato
+            </button>
+
+        </div>
+
+
+        <div class="redes">
+
+            <span>◎</span>
+            <span>▶</span>
+            <span>♪</span>
+
+        </div>
+
+
+        <p>
+            NÓS POR NÓS.<br>
+            SEMPRE.
+        </p>
+
+    </footer>
+
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

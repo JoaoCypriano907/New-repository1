@@ -1,0 +1,1270 @@
+/* =====================================================
+   CONFIGURAÇÕES GERAIS
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #000;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =====================================================
+   TELA INICIAL
+   ===================================================== */
+
+#telaLogin {
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url("./imagens/logo.png.jpeg");
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-position: center calc(50% - 70px);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   CONTEÚDO DA TELA INICIAL
+   ===================================================== */
+
+.conteudo-inicial {
+    position: absolute;
+
+    width: 100%;
+
+    left: 0;
+
+    top: 78%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+.mensagem {
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: 400;
+
+    letter-spacing: 4px;
+
+    text-align: center;
+
+    margin-bottom: 45px;
+
+    text-shadow: 0 2px 8px #000;
+}
+
+
+/* =====================================================
+   BOTÃO ENTRAR
+   ===================================================== */
+
+.btn-entrar {
+    width: 430px;
+
+    max-width: 90vw;
+
+    height: 72px;
+
+    background: white;
+
+    color: black;
+
+    border: none;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    letter-spacing: 5px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.btn-entrar:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 25px rgba(255,255,255,0.15);
+}
+
+
+.seta {
+    font-size: 30px;
+
+    font-weight: normal;
+}
+
+
+/* =====================================================
+   ESCONDER / MOSTRAR
+   ===================================================== */
+
+.escondido {
+    display: none !important;
+}
+
+
+#site {
+    width: 100%;
+
+    min-height: 100vh;
+
+    background: #000;
+}
+
+
+/* =====================================================
+   CABEÇALHO
+   ===================================================== */
+
+.cabecalho {
+    width: 100%;
+
+    height: 90px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 5%;
+
+    background: #000;
+
+    border-bottom: 1px solid #202020;
+
+    position: relative;
+
+    z-index: 10;
+}
+
+
+/* =====================================================
+   LOGO DO CABEÇALHO
+   ===================================================== */
+
+.logo-header img {
+    width: 110px;
+
+    height: auto;
+
+    display: block;
+}
+
+
+/* =====================================================
+   MENU PRINCIPAL
+   ===================================================== */
+
+.menu {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 45px;
+}
+
+
+.menu button {
+    position: relative;
+
+    background: transparent;
+
+    border: none;
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    font-weight: 500;
+
+    letter-spacing: 1px;
+
+    padding: 12px 5px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Linha laranja abaixo da opção */
+
+.menu button::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 0;
+
+    width: 0;
+
+    height: 2px;
+
+    background: #ff5b1a;
+
+    transition: 0.3s;
+}
+
+
+/* Efeito quando passar o mouse */
+
+.menu button:hover {
+    color: #ff5b1a;
+}
+
+
+.menu button:hover::after {
+    width: 100%;
+}
+
+
+/* =====================================================
+   BOTÃO SAIR
+   ===================================================== */
+
+.btn-sair {
+    background: #ff5b1a;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 30px;
+
+    padding: 13px 25px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.btn-sair:hover {
+    background: #ff7137;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 15px rgba(255, 91, 26, 0.3);
+}
+
+
+/* =====================================================
+   HERO
+   ===================================================== */
+
+.hero {
+    min-height: 535px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    background-image:
+
+            linear-gradient(
+                    90deg,
+                    rgba(0,0,0,0.98) 0%,
+                    rgba(0,0,0,0.82) 35%,
+                    rgba(0,0,0,0.20) 70%,
+                    rgba(0,0,0,0.45) 100%
+            ),
+
+            url("./imagens/logo.png.jpeg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+/* =====================================================
+   CONTEÚDO DO HERO
+   ===================================================== */
+
+.hero-conteudo {
+    width: 45%;
+
+    margin-left: 8%;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.logo-hero {
+    width: 230px;
+
+    max-width: 70%;
+
+    margin-bottom: 20px;
+}
+
+
+.hero h1 {
+    font-size: 27px;
+
+    letter-spacing: 8px;
+
+    margin-bottom: 5px;
+}
+
+
+.hero h2 {
+    font-size: 14px;
+
+    letter-spacing: 7px;
+
+    color: #aaa;
+
+    margin-bottom: 25px;
+}
+
+
+.hero p {
+    color: #ddd;
+
+    font-size: 14px;
+
+    line-height: 2;
+
+    margin-bottom: 25px;
+}
+
+
+/* =====================================================
+   BOTÃO LARANJA
+   ===================================================== */
+
+.btn-laranja {
+    background: #ff5b1a;
+
+    color: white;
+
+    border: none;
+
+    padding: 14px 25px;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.btn-laranja:hover {
+    transform: translateY(-2px);
+
+    background: #ff7137;
+}
+
+
+/* =====================================================
+   FRASE LATERAL DO HERO
+   ===================================================== */
+
+.frase-hero {
+    position: absolute;
+
+    right: 7%;
+
+    top: 48%;
+
+    transform: translateY(-50%);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 13px;
+
+    border-right: 3px solid #ff5b1a;
+
+    padding-right: 20px;
+
+    text-align: right;
+}
+
+
+.frase-hero span {
+    color: #ddd;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+}
+
+
+/* =====================================================
+   SOBRE NÓS
+   ===================================================== */
+
+.sobre {
+    min-height: 350px;
+
+    display: flex;
+
+    border-top: 1px solid #151515;
+
+    border-bottom: 1px solid #151515;
+}
+
+
+.sobre-texto {
+    width: 50%;
+
+    padding: 60px 7%;
+}
+
+
+.titulo-pequeno {
+    color: #ff5b1a;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    display: block;
+
+    margin-bottom: 10px;
+}
+
+
+.sobre h2 {
+    font-size: 27px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+}
+
+
+.sobre p {
+    color: #aaa;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    max-width: 550px;
+
+    margin-bottom: 8px;
+}
+
+
+/* =====================================================
+   VALORES
+   ===================================================== */
+
+.valores {
+    display: flex;
+
+    gap: 35px;
+
+    margin-top: 30px;
+}
+
+
+.valores div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+
+.valores strong {
+    color: #ff5b1a;
+
+    font-size: 20px;
+}
+
+
+.valores span {
+    font-size: 9px;
+
+    letter-spacing: 2px;
+}
+
+
+.valores small {
+    color: #777;
+
+    font-size: 8px;
+}
+
+
+/* =====================================================
+   IMAGEM SOBRE NÓS
+   ===================================================== */
+
+.sobre-imagem {
+    width: 50%;
+
+    min-height: 350px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.sobre-imagem img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    filter: grayscale(100%) brightness(45%);
+}
+
+
+.frase-imagem {
+    position: absolute;
+
+    right: 10%;
+
+    bottom: 15%;
+
+    font-size: 20px;
+
+    font-style: italic;
+
+    text-align: right;
+
+    line-height: 1.4;
+}
+
+
+.frase-imagem strong {
+    color: white;
+}
+
+
+/* =====================================================
+   ELENCO
+   ===================================================== */
+
+.elenco {
+    background: #f3f3f3;
+
+    color: #111;
+
+    padding: 55px 7%;
+}
+
+
+.titulo-secao {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+
+    margin-bottom: 30px;
+}
+
+
+.titulo-secao span {
+    color: #ff5b1a;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    font-weight: bold;
+}
+
+
+.titulo-secao h2 {
+    font-size: 30px;
+
+    margin-top: 5px;
+}
+
+
+.titulo-secao button {
+    border: none;
+
+    background: none;
+
+    color: #333;
+
+    font-size: 11px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   JOGADORES
+   ===================================================== */
+
+.jogadores {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 12px;
+}
+
+
+.jogador {
+    background: #050505;
+
+    color: white;
+
+    min-height: 250px;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    padding-bottom: 15px;
+
+    position: relative;
+
+    transition: 0.3s;
+}
+
+
+.jogador:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+
+.foto-jogador {
+    height: 170px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+            radial-gradient(
+                    circle at center,
+                    #444 0,
+                    #111 45%,
+                    #000 80%
+            );
+}
+
+
+.foto-jogador span {
+    font-size: 25px;
+
+    font-weight: bold;
+
+    color: #ddd;
+
+    letter-spacing: 2px;
+}
+
+
+.jogador h3 {
+    font-size: 13px;
+
+    margin: 12px 12px 3px;
+}
+
+
+.jogador p {
+    color: #888;
+
+    font-size: 9px;
+
+    margin-left: 12px;
+}
+
+
+.jogador strong {
+    display: block;
+
+    color: #ff5b1a;
+
+    font-size: 10px;
+
+    margin: 7px 12px;
+}
+
+
+/* =====================================================
+   ÁREA DOS JOGOS
+   ===================================================== */
+
+.jogos-resumo {
+    min-height: 270px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    background: #050505;
+
+    padding: 50px 7%;
+
+    gap: 50px;
+}
+
+
+.proximo-jogo,
+.ultimo-jogo {
+    position: relative;
+}
+
+
+.confronto {
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+
+    margin-top: 20px;
+}
+
+
+.confronto div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+
+.confronto strong {
+    font-size: 22px;
+}
+
+
+.confronto small {
+    color: #777;
+
+    font-size: 8px;
+}
+
+
+.vs {
+    color: #ff5b1a;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+.informacoes-jogo {
+    display: flex;
+
+    gap: 30px;
+
+    margin-top: 25px;
+
+    color: #aaa;
+
+    font-size: 10px;
+}
+
+
+.btn-detalhes {
+    margin-top: 25px;
+
+    padding: 10px 22px;
+
+    border: 1px solid #ff5b1a;
+
+    color: #ff5b1a;
+
+    background: transparent;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.btn-detalhes:hover {
+    background: #ff5b1a;
+
+    color: white;
+}
+
+
+/* =====================================================
+   ÚLTIMO JOGO
+   ===================================================== */
+
+.ultimo-jogo {
+    background: #0b0b0b;
+
+    border: 1px solid #202020;
+
+    border-radius: 8px;
+
+    padding: 25px;
+}
+
+
+.placar {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 25px 0;
+}
+
+
+.placar strong {
+    font-size: 13px;
+}
+
+
+.placar span {
+    font-size: 27px;
+
+    font-weight: bold;
+}
+
+
+.placar b {
+    color: #555;
+}
+
+
+.estatisticas {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 50px;
+}
+
+
+.estatisticas div {
+    display: flex;
+
+    flex-direction: column;
+
+    text-align: center;
+}
+
+
+.estatisticas strong {
+    font-size: 18px;
+}
+
+
+.estatisticas small {
+    color: #777;
+
+    font-size: 8px;
+}
+
+
+/* =====================================================
+   PÁGINAS INTERNAS
+   ===================================================== */
+
+.conteudo-pagina {
+    padding: 70px 10%;
+
+    background: #000;
+
+    min-height: 350px;
+
+    display: none;
+}
+
+
+.conteudo-pagina.ativo {
+    display: block;
+}
+
+
+.conteudo-pagina h2 {
+    font-size: 32px;
+
+    margin-bottom: 30px;
+}
+
+
+.conteudo-pagina p {
+    color: #aaa;
+
+    margin-bottom: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+footer {
+    min-height: 130px;
+
+    padding: 30px 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background: #000;
+
+    border-top: 1px solid #1c1c1c;
+}
+
+
+.footer-logo img {
+    width: 90px;
+}
+
+
+.footer-menu {
+    display: flex;
+
+    gap: 25px;
+}
+
+
+.footer-menu button {
+    border: none;
+
+    background: none;
+
+    color: #777;
+
+    font-size: 10px;
+
+    cursor: pointer;
+}
+
+
+.footer-menu button:hover {
+    color: white;
+}
+
+
+.redes {
+    display: flex;
+
+    gap: 15px;
+
+    color: #aaa;
+}
+
+
+footer p {
+    color: #666;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    text-align: right;
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE - TABLET / CELULAR
+   ===================================================== */
+
+@media (max-width: 1000px) {
+
+    .menu {
+        gap: 25px;
+    }
+
+    .menu button {
+        font-size: 14px;
+    }
+
+    .logo-header img {
+        width: 95px;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .cabecalho {
+        padding: 0 20px;
+    }
+
+
+    .menu {
+        display: none;
+    }
+
+
+    .hero {
+        min-height: 600px;
+    }
+
+
+    .hero-conteudo {
+        width: 80%;
+
+        margin-left: 8%;
+    }
+
+
+    .frase-hero {
+        display: none;
+    }
+
+
+    .sobre {
+        flex-direction: column;
+    }
+
+
+    .sobre-texto,
+    .sobre-imagem {
+        width: 100%;
+    }
+
+
+    .sobre-imagem {
+        height: 300px;
+    }
+
+
+    .jogadores {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .jogos-resumo {
+        grid-template-columns: 1fr;
+    }
+
+
+    footer {
+        flex-direction: column;
+
+        gap: 25px;
+    }
+
+
+    .footer-menu {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+}
+
+
+/* =====================================================
+   CELULAR
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    #telaLogin {
+        background-position: center calc(50% - 35px);
+    }
+
+
+    .conteudo-inicial {
+        top: 75%;
+    }
+
+
+    .mensagem {
+        font-size: 14px;
+
+        letter-spacing: 3px;
+
+        margin-bottom: 30px;
+    }
+
+
+    .btn-entrar {
+        width: 90%;
+
+        height: 65px;
+    }
+
+
+    .hero {
+        background-position: center;
+    }
+
+
+    .hero h1 {
+        font-size: 20px;
+
+        letter-spacing: 5px;
+    }
+
+
+    .logo-hero {
+        width: 180px;
+    }
+
+
+    .valores {
+        gap: 15px;
+
+        flex-wrap: wrap;
+    }
+
+
+    .jogadores {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .jogador {
+        min-height: 220px;
+    }
+
+
+    .foto-jogador {
+        height: 140px;
+    }
+
+
+    .titulo-secao {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .confronto {
+        gap: 20px;
+    }
+
+
+    .informacoes-jogo {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+}
+    /* Corrige o fundo branco nas laterais */
+    html,
+    body,
+    #site,
+    #pagina-principal {
+        background-color: #000 !important;
+    }
+
+    /* Mantém a seção Sobre Nós dentro da tela */
+    .sobre {
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #000 !important;
+    }
+
+    .sobre-texto,
+    .sobre-imagem {
+        box-sizing: border-box;
+    }
+
+    /* Deixa o elenco preto também */
+    .elenco {
+        background-color: #000 !important;
+        color: #fff;
+    }
+
+/* Centralizar a imagem principal */
+.secao-foto-time {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.secao-foto-time img {
+    display: block;
+    width: 80%;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+}
